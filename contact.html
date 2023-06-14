@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juicely</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="bordered-wrapper">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/LogoOmgedraaid.png" width="200px"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="Imagery.html">Imagery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="img/shopping-cart.png" width="30px" height="30px"></a>
+                <img src="img/hamburger.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+
+
+        <div class="container2">
+            <div class="h1-special">
+                <h1 class="title2">Contact Us</h1>
+            </div>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <br>
+                    <br>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contianer">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download our app for android.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps?hl=nl&gl=US&pli=1"><img src="img/PlayStore.png">
+                    </div></a>
+                </div>
+                <div class="footer-col-2">
+                    <a href="Imagery.html"><img src="img/LogoDef.png"></a>
+                    <p>
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Imagery.html">Imagery</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100093587320426">Facebook</a></li>
+                        <li><a href="https://twitter.com/home?lang=nl">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/juicelybelgium/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright - Jimmy Maes - 6MMb</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
